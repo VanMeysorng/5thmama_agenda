@@ -1,0 +1,135 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header and Footer Styles */
+header, footer {
+    background-color: #0055a5;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* Responsive Image Styles */
+header img {
+    height: auto;
+    width: 30%;
+    max-height: 100px;
+    transition: width 0.3s;
+    display: block;
+    margin: auto;
+}
+
+/* Heading Styles */
+h1, h2 {
+    margin: 20px 0;
+    font-size: calc(1em + 1vw); 
+    transition: margin 0.3s, font-size 0.3s;
+}
+
+/* Section Styles */
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed; 
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 6px;
+    text-align: left;
+    overflow: hidden; 
+    text-overflow: clip; 
+    white-space: normal; 
+}
+
+
+th {
+    background-color: #003366;
+    color: white;
+}
+
+td:first-child {
+    padding: 15px;
+    font-weight: bold;
+}
+
+.tentative {
+    background-color: #fff3cd;
+    color: #000000;
+    font-style: italic;
+}
+
+
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 768px) {
+    header img {
+        width: 40%;
+    }
+
+    h1, h2 {
+        font-size: calc(0.9em + 1vw);
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 15px;
+        width: 95%;
+    }
+
+    table, th, td {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 50%;
+    }
+
+    h1, h2 {
+        font-size: calc(0.7em + 1vw);
+        margin: 5px 0;
+    }
+
+    p {
+        font-size: calc(0.5em + 1vw);
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 10px;
+        width: 100%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    table, th, td {
+        padding: 4px;
+    }
+
+    footer {
+        font-size: calc(0.98em + 1vw);
+        margin: 5px 0;
+    }
+}
