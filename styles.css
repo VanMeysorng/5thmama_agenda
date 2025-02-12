@@ -271,7 +271,7 @@ footer {
         font-size: 9px; /* Minimal text */
     }
     .social-content {
-        gap: 4px;
+        gap: 6px;
     }
     .social-item {
         gap: 4px; 
@@ -279,10 +279,10 @@ footer {
     .social-details {
         display: flex;
         align-items: center;
-        gap: 2px; /* Spacing between icon and text */
+        gap: 3px; /* Spacing between icon and text */
     }
     .social-details img {
-        height: 20px; /* Icon size */
+        height: 22px; /* Icon size */
     }
     .qr-code {
         height: 18px; /* Minimal QR codes */
@@ -306,7 +306,7 @@ footer {
         padding: 1px 1px;
     }
     .logo-section img {
-        height: 10px; /* Default logo size */
+        height: 13px; /* Default logo size */
         margin: 1px;
         transition: height 0.1s ease; /* Smooth scaling */
     }
