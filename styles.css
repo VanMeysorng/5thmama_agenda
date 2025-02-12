@@ -79,6 +79,299 @@ td:first-child {
 }
 
 
+
+/* Footer Styles */
+footer {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    overflow: hidden;
+    background-color: #0055a5;
+    color: white;
+}
+
+/* Footer Top Styles */
+.footer-top {
+    background-color: #003366;
+    color: white;
+    padding: 25px 0;
+    padding-top: 0; /* Default padding */
+    text-align: center;
+}
+
+.social-section {
+    margin: 0 auto;
+    max-width: 800px; /* Adjust as needed */
+    padding: 0 20px; /* Add padding to prevent overflow */
+}
+
+.social-section h3 {
+    font-size: 24px; /* Default font size */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.social-content {
+    display: flex;
+    justify-content: center; /* Center the social items horizontally */
+    align-items: center;
+    gap: 40px; /* Spacing between Facebook and Instagram sections */
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Spacing between icon/text and QR code */
+}
+
+.social-details {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* Spacing between icon and text */
+}
+
+.social-details img {
+    height: 40px; /* Icon size */
+}
+
+.social-details span {
+    font-size: 16px; /* Default font size */
+    color: white;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.qr-code {
+    height: 40px; /* QR code size */
+    transition: height 0.3s ease; /* Smooth scaling */
+}
+
+/* Footer Bottom Styles */
+.footer-bottom {
+    background-color: #f4f4f4; /* Light grey background */
+    color: black; /* Black text for better readability */
+    padding: 3px 0; /* Default padding */
+    margin-top: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around; /* Adjusted for better spacing */
+    align-items: center;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px; /* Add padding to prevent overflow */
+}
+
+.logo-section {
+    margin: 10px; /* Adjusted margins for better spacing */
+    text-align: center;
+}
+
+.logo-section h5 {
+    font-size: 16px; /* Default font size */
+    margin-bottom: 10px;
+    margin-top: 7px;
+}
+
+.logo-section img {
+    height: 40px; /* Default logo size */
+    margin: 5px;
+    transition: height 0.3s ease; /* Smooth scaling */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .footer-top {
+        padding: 18px 0; /* Slightly smaller padding */
+    }
+    .social-section h3 {
+        font-size: 22px; /* Slightly smaller font size */
+    }
+    .social-details span {
+        font-size: 15px; /* Slightly smaller text */
+    }
+    .qr-code {
+        height: 45px; /* Slightly smaller QR codes */
+    }
+    .logo-section img {
+        height: 35px; /* Slightly smaller logos */
+    }
+    .logo-section h5 {
+        font-size: 15px; /* Slightly smaller text */
+    }
+    .logo-section {
+        margin: 8px; /* Reduce gap between sections */
+    }
+}
+
+@media (max-width: 992px) {
+    .footer-top {
+        padding: 16px 0; /* Smaller padding */
+    }
+    .social-section h3 {
+        font-size: 20px; /* Smaller font size */
+    }
+    .social-details span {
+        font-size: 14px; /* Smaller text */
+    }
+    .qr-code {
+        height: 40px; /* Smaller QR codes */
+    }
+    .logo-section img {
+        height: 30px; /* Smaller logos */
+    }
+    .logo-section h5 {
+        font-size: 14px; /* Smaller text */
+    }
+    .logo-section {
+        margin: 6px; /* Further reduce gap */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-top {
+        padding: 14px 0; /* Even smaller padding */
+    }
+    .social-section h3 {
+        font-size: 18px; /* Even smaller font size */
+    }
+    .social-details span {
+        font-size: 13px; /* Even smaller text */
+    }
+    .qr-code {
+        height: 35px; /* Even smaller QR codes */
+    }
+    .logo-section img {
+        height: 25px; /* Even smaller logos */
+    }
+    .logo-section h5 {
+        font-size: 13px; /* Even smaller text */
+    }
+    .logo-section {
+        margin: 5px; /* Further reduce gap */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-top {
+        padding: 12px 0; /* Minimal padding */
+    }
+    .social-section h3 {
+        font-size: 11px; /* Minimal font size */
+        margin-top: 4px;
+    }
+    .social-details span {
+        font-size: 9px; /* Minimal text */
+    }
+    .social-content {
+        gap: 4px;
+    }
+    .social-item {
+        gap: 4px; 
+    }
+    .social-details {
+        display: flex;
+        align-items: center;
+        gap: 2px; /* Spacing between icon and text */
+    }
+    .social-details img {
+        height: 20px; /* Icon size */
+    }
+    .qr-code {
+        height: 18px; /* Minimal QR codes */
+    }
+    .logo-section img {
+        height: 12px; /* Minimal logos */
+    }
+    .logo-section h5 {
+        font-size: 6px; /* Minimal text */
+        margin-bottom: 1px;
+    }
+    .logo-section {
+        margin: 0px; /* Minimal gap */
+    }
+    .container {
+        padding: 0 0px; /* Minimal container padding */
+        margin: 0px;
+        justify-content: space-evenly; /* Adjusted for better spacing */
+    }
+    .footer-bottom{
+        padding: 1px 1px;
+    }
+    .logo-section img {
+        height: 10px; /* Default logo size */
+        margin: 1px;
+        transition: height 0.1s ease; /* Smooth scaling */
+    }
+    .line {
+        margin-bottom: 8px;
+        margin-top: 3px;
+    }
+}
+
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 768px) {
+    header img {
+        width: 40%;
+    }
+
+    h1, h2 {
+        font-size: calc(0.9em + 1vw);
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 15px;
+        width: 95%;
+    }
+
+    table, th, td {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 50%;
+    }
+
+    h1, h2 {
+        font-size: calc(0.7em + 1vw);
+        margin: 5px 0;
+    }
+
+    p {
+        font-size: calc(0.5em + 1vw);
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 10px;
+        width: 100%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    table, th, td {
+        padding: 4px;
+    }
+
+    footer {
+        font-size: calc(0.98em + 1vw);
+        margin: 5px 0;
+    }
+}
+
+
 /* Media Queries for Responsive Adjustments */
 @media (max-width: 768px) {
     header img {
