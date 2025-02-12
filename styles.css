@@ -7,20 +7,21 @@ body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Header and Footer Styles */
+/* Header Styles */
 header{
     background-color: #003366;
     color: white;
     text-align: center;
     padding: 18px 0;
+    padding-top: 27px;
     width: 100%;
 }
 
 /* Responsive Image Styles */
 header img {
     height: auto;
-    width: 30%;
-    max-height: 80px;
+    width: 80%;
+    max-height: 100px;
     transition: width 0.3s;
     display: block;
     margin: auto;
@@ -263,7 +264,7 @@ footer {
         padding: 12px 0; /* Minimal padding */
     }
     .social-section h3 {
-        font-size: 11px; /* Minimal font size */
+        font-size: 10px; /* Minimal font size */
         margin-top: 4px;
     }
     .social-details span {
@@ -318,7 +319,8 @@ footer {
 /* Media Queries for Responsive Adjustments */
 @media (max-width: 768px) {
     header img {
-        width: 40%;
+        width: 20%;
+        max-height: 70px;
     }
 
     h1, h2 {
