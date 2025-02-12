@@ -8,11 +8,11 @@ body {
 }
 
 /* Header and Footer Styles */
-header, footer {
-    background-color: #0055a5;
+header{
+    background-color: #003366;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 18px 0;
     width: 100%;
 }
 
@@ -20,7 +20,7 @@ header, footer {
 header img {
     height: auto;
     width: 30%;
-    max-height: 100px;
+    max-height: 80px;
     transition: width 0.3s;
     display: block;
     margin: auto;
@@ -79,7 +79,6 @@ td:first-child {
 }
 
 
-
 /* Footer Styles */
 footer {
     font-family: Arial, sans-serif;
@@ -91,7 +90,7 @@ footer {
 
 /* Footer Top Styles */
 .footer-top {
-    background-color: #003366;
+    background-color:#003366;
     color: white;
     padding: 25px 0;
     padding-top: 0; /* Default padding */
