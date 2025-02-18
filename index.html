@@ -121,10 +121,14 @@
                     <h5>Gold Sponsor</h5>
                     <img src="img/phillipbank_logo.png" alt="Phillip Bank Logo">
                 </div>
-                <div class="logo-section">
+                <div class="logo-section media-partner">
                     <h5>Media Partner</h5>
                     <img src="img/ahladang_logo.png" alt="Ahladang Logo">
                     <img src="img/kiripost_logo.png" alt="Kiripost Logo">
+                    <img src="img/KH-CC-Time-Logo.png" alt="KH-CC-Time Logo">
+                    <img src="img/Gazette.png" alt="Gazette Logo">
+                    <img src="img/FB_IMG_1739419357905.jpg" alt="Kiripost Logo">
+                    <img src="img/UYFC--PP.png" alt="UYFC--PP Logo">
                 </div>
                 <div class="logo-section">
                     <h5>In-Kind Sponsors</h5>
@@ -139,6 +143,28 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (window.matchMedia("(max-width: 768px)").matches) {
+                const footerBottom = document.querySelector('.footer-bottom .container');
+                let scrollAmount = 0;
+                const scrollSpeed = 0.3; 
+    
+                function scrollFooter() {
+                    if (scrollAmount >= footerBottom.scrollWidth - footerBottom.clientWidth) {
+                        scrollAmount = 0; 
+                    } else {
+                        scrollAmount += scrollSpeed;
+                    }
+                    footerBottom.scrollTo(scrollAmount, 0);
+                    requestAnimationFrame(scrollFooter);
+                }
+    
+                scrollFooter();
+            }
+        });
+    </script>
     
 </body>
 </html>

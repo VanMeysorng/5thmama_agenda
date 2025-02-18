@@ -4,11 +4,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; 
 }
 
 /* Header Styles */
-header{
+header {
     background-color: #003366;
     color: white;
     text-align: center;
@@ -17,7 +17,6 @@ header{
     width: 100%;
 }
 
-/* Responsive Image Styles */
 header img {
     height: auto;
     width: 80%;
@@ -29,9 +28,13 @@ header img {
 
 /* Heading Styles */
 h1, h2 {
+    font-size: 30px;
     margin: 20px 0;
-    font-size: calc(1em + 1vw); 
+    font-size: calc(1em + 1vw);
     transition: margin 0.3s, font-size 0.3s;
+}
+p {
+    font-size: 23px; 
 }
 
 /* Section Styles */
@@ -40,8 +43,8 @@ section {
     margin: 20px auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 80%;
-    max-width: 1000px;
+    width: 90%;
+    max-width: 1300px;
     box-sizing: border-box;
 }
 
@@ -50,18 +53,18 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-    table-layout: fixed; 
+    table-layout: fixed;
 }
 
 th, td {
     border: 1px solid black;
-    padding: 6px;
+    padding: 12px;
     text-align: left;
-    overflow: hidden; 
-    text-overflow: clip; 
-    white-space: normal; 
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: normal;
+    font-size: 20px;
 }
-
 
 th {
     background-color: #003366;
@@ -79,7 +82,6 @@ td:first-child {
     font-style: italic;
 }
 
-
 /* Footer Styles */
 footer {
     font-family: Arial, sans-serif;
@@ -89,23 +91,22 @@ footer {
     color: white;
 }
 
-/* Footer Top Styles */
 .footer-top {
-    background-color:#003366;
+    background-color: #003366;
     color: white;
     padding: 25px 0;
-    padding-top: 0; /* Default padding */
+    padding-top: 0; 
     text-align: center;
 }
 
 .social-section {
     margin: 0 auto;
-    max-width: 800px; /* Adjust as needed */
-    padding: 0 20px; /* Add padding to prevent overflow */
+    max-width: 800px;
+    padding: 0 20px;
 }
 
 .social-section h3 {
-    font-size: 24px; /* Default font size */
+    font-size: 24px;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
@@ -119,311 +120,261 @@ footer {
 
 .social-content {
     display: flex;
-    justify-content: center; /* Center the social items horizontally */
+    justify-content: center;
     align-items: center;
-    gap: 40px; /* Spacing between Facebook and Instagram sections */
+    gap: 40px;
 }
 
 .social-item {
     display: flex;
     align-items: center;
-    gap: 10px; /* Spacing between icon/text and QR code */
+    gap: 10px;
 }
 
 .social-details {
     display: flex;
     align-items: center;
-    gap: 6px; /* Spacing between icon and text */
+    gap: 6px;
 }
 
 .social-details img {
-    height: 40px; /* Icon size */
+    height: 40px;
 }
 
 .social-details span {
-    font-size: 16px; /* Default font size */
+    font-size: 16px;
     color: white;
-    white-space: nowrap; /* Prevent text from wrapping */
+    white-space: nowrap;
 }
 
 .qr-code {
-    height: 40px; /* QR code size */
-    transition: height 0.3s ease; /* Smooth scaling */
+    height: 40px;
+    transition: height 0.3s ease;
 }
 
-/* Footer Bottom Styles */
 .footer-bottom {
-    background-color: #f4f4f4; /* Light grey background */
-    color: black; /* Black text for better readability */
-    padding: 3px 0; /* Default padding */
+    background-color: #f4f4f4;
+    color: black;
+    padding: 3px 0;
     margin-top: 0px;
+    overflow: hidden; 
 }
 
 .container {
     display: flex;
-    justify-content: space-around; /* Adjusted for better spacing */
+    justify-content: flex-start; 
     align-items: center;
-    flex-wrap: nowrap; /* Prevent wrapping */
-    max-width: 1200px;
+    flex-wrap: nowrap; 
+    max-width: 100%; 
     margin: auto;
-    padding: 0 20px; /* Add padding to prevent overflow */
+    padding: 0 20px;
+    overflow-x: hidden; 
+    white-space: nowrap;
 }
 
 .logo-section {
-    margin: 10px; /* Adjusted margins for better spacing */
+    margin: 10px;
     text-align: center;
 }
 
 .logo-section h5 {
-    font-size: 16px; /* Default font size */
-    margin-bottom: 10px;
+    font-size: 14px;
+    margin-bottom: 8px;
     margin-top: 7px;
+    white-space: nowrap;
 }
 
 .logo-section img {
-    height: 40px; /* Default logo size */
-    margin: 5px;
-    transition: height 0.3s ease; /* Smooth scaling */
+    height: 30px;
+    margin: 2px;
+    transition: height 0.3s ease;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for various device widths */
 @media (max-width: 1200px) {
     .footer-top {
-        padding: 18px 0; /* Slightly smaller padding */
+        padding: 18px 0;
     }
     .social-section h3 {
-        font-size: 22px; /* Slightly smaller font size */
+        font-size: 22px;
     }
     .social-details span {
-        font-size: 15px; /* Slightly smaller text */
+        font-size: 15px;
     }
     .qr-code {
-        height: 45px; /* Slightly smaller QR codes */
+        height: 45px;
     }
     .logo-section img {
-        height: 35px; /* Slightly smaller logos */
+        height: 35px;
     }
     .logo-section h5 {
-        font-size: 15px; /* Slightly smaller text */
+        font-size: 15px;
     }
     .logo-section {
-        margin: 8px; /* Reduce gap between sections */
+        margin: 8px;
     }
+    header img {
+        width: 40%;
+    }
+    h1, h2 {
+        font-size: calc(0.9em + 1vw);
+        margin: 10px 0;
+    }
+    section {
+        padding: 15px;
+        width: 95%;
+    }
+    table, th, td {
+        padding: 5px;
+    }
+    
 }
 
-@media (max-width: 992px) {
-    .footer-top {
-        padding: 16px 0; /* Smaller padding */
+@media (min-width: 769px) {
+    .footer-bottom {
+        padding: 30px 0; 
+        text-align: center; 
     }
-    .social-section h3 {
-        font-size: 20px; /* Smaller font size */
-    }
-    .social-details span {
-        font-size: 14px; /* Smaller text */
-    }
-    .qr-code {
-        height: 40px; /* Smaller QR codes */
-    }
-    .logo-section img {
-        height: 30px; /* Smaller logos */
-    }
-    .logo-section h5 {
-        font-size: 14px; /* Smaller text */
-    }
-    .logo-section {
-        margin: 6px; /* Further reduce gap */
-    }
-}
 
-@media (max-width: 768px) {
-    .footer-top {
-        padding: 14px 0; /* Even smaller padding */
+    .container {
+        justify-content: center; 
+        flex-wrap: wrap; 
+        gap: 10px; 
     }
-    .social-section h3 {
-        font-size: 18px; /* Even smaller font size */
-    }
-    .social-details span {
-        font-size: 13px; /* Even smaller text */
-    }
-    .qr-code {
-        height: 35px; /* Even smaller QR codes */
-    }
-    .logo-section img {
-        height: 25px; /* Even smaller logos */
-    }
-    .logo-section h5 {
-        font-size: 13px; /* Even smaller text */
-    }
+
     .logo-section {
-        margin: 5px; /* Further reduce gap */
+        margin: 10px; 
+    }
+
+    .logo-section h5 {
+        font-size: 14px; 
+        margin-bottom: 12px; 
+    }
+
+    .logo-section img {
+        height: 40px; 
+    }
+
+    .logo-section.media-partner img {
+        height: 40px; 
     }
 }
 
 @media (max-width: 480px) {
+    /* General adjustments for smaller screens */
+    header img {
+        width: 50%;
+    }
+    h1, h2, p {
+        font-size: calc(0.6em + 1vw);
+        margin: 5px 0;
+    }
+    section {
+        padding: 10px;
+        width: 100%;
+    }
+    table, th, td {
+        padding: 4px;
+    }
+    th, td {
+        font-size: 12px;
+    }
+    footer {
+        font-size: calc(0.6em + 0.5vw);
+        margin: 5px 0;
+    }
     .footer-top {
-        padding: 12px 0; /* Minimal padding */
+        padding: 12px 0;
     }
     .social-section h3 {
-        font-size: 10px; /* Minimal font size */
+        font-size: 10px;
         margin-top: 4px;
     }
     .social-details span {
-        font-size: 9px; /* Minimal text */
+        font-size: 9px;
     }
     .social-content {
         gap: 6px;
     }
     .social-item {
-        gap: 4px; 
-    }
-    .social-details {
-        display: flex;
-        align-items: center;
-        gap: 3px; /* Spacing between icon and text */
+        gap: 4px;
     }
     .social-details img {
-        height: 22px; /* Icon size */
+        height: 22px;
     }
     .qr-code {
-        height: 18px; /* Minimal QR codes */
+        height: 18px;
     }
     .logo-section img {
-        height: 12px; /* Minimal logos */
-    }
-    .logo-section h5 {
-        font-size: 6px; /* Minimal text */
-        margin-bottom: 1px;
-    }
-    .logo-section {
-        margin: 0px; /* Minimal gap */
-    }
-    .container {
-        padding: 0 0px; /* Minimal container padding */
-        margin: 0px;
-        justify-content: space-evenly; /* Adjusted for better spacing */
-    }
-    .footer-bottom{
-        padding: 1px 1px;
-    }
-    .logo-section img {
-        height: 13px; /* Default logo size */
+        height: 13px;
         margin: 1px;
-        transition: height 0.1s ease; /* Smooth scaling */
+        transition: height 0.1s ease;
     }
     .line {
         margin-bottom: 8px;
         margin-top: 3px;
     }
-}
-
-/* Media Queries for Responsive Adjustments */
-@media (max-width: 768px) {
-    header img {
-        width: 20%;
-        max-height: 70px;
+    .container {
+        padding: 0 0px;
+        margin: 0px;
+        justify-content: space-evenly;
+    }
+    .footer-bottom {
+        padding: 1px 1px;
     }
 
-    h1, h2 {
-        font-size: calc(0.9em + 1vw);
-        margin: 10px 0;
+    .logo-section h5 {
+        margin-bottom: 8px;
+        margin-top: 7px;
+        font-size: 7px;
+        white-space: nowrap;
+        vertical-align: middle;
     }
 
-    section {
-        padding: 15px;
-        width: 95%;
+    .logo-section img {
+        height: 10px;
+        margin: 1px;
+        transition: height 0.3s ease;
     }
 
-    table, th, td {
-        padding: 5px;
-    }
-}
-
-@media (max-width: 480px) {
-    header img {
-        width: 50%;
-    }
-
-    h1, h2 {
-        font-size: calc(0.7em + 1vw);
-        margin: 5px 0;
+    /* Specific adjustments for the footer at 480px */
+    .footer-bottom .container {
+        display: flex;
+        flex-wrap: nowrap; 
+        overflow-x: auto;
+        justify-content: flex-start;
+        gap: 5px; 
     }
 
-    p {
-        font-size: calc(0.5em + 1vw);
-        margin: 5px 0;
+    .footer-bottom .logo-section {
+        flex: 0 0 auto; 
+        margin: 5px;
+        text-align: center;
     }
 
-    section {
-        padding: 10px;
-        width: 100%;
+    .footer-bottom .logo-section h5 {
+        font-size: 8px;
+        margin-bottom: 5px;
+        white-space: nowrap; 
     }
 
-    table {
-        font-size: 12px;
+    .footer-bottom .logo-section img {
+        height: 15px;
+        margin: 1px;
     }
 
-    table, th, td {
-        padding: 4px;
+    /* Media Partner section adjustments */
+    .footer-bottom .logo-section.media-partner {
+        flex: 0 0 auto; 
     }
 
-    footer {
-        font-size: calc(0.98em + 1vw);
-        margin: 5px 0;
-    }
-}
-
-
-/* Media Queries for Responsive Adjustments */
-@media (max-width: 768px) {
-    header img {
-        width: 40%;
+    .footer-bottom .logo-section.media-partner h5 {
+        font-size: 8px;
+        margin-bottom: 5px;
     }
 
-    h1, h2 {
-        font-size: calc(0.9em + 1vw);
-        margin: 10px 0;
-    }
-
-    section {
-        padding: 15px;
-        width: 95%;
-    }
-
-    table, th, td {
-        padding: 5px;
-    }
-}
-
-@media (max-width: 480px) {
-    header img {
-        width: 50%;
-    }
-
-    h1, h2 {
-        font-size: calc(0.7em + 1vw);
-        margin: 5px 0;
-    }
-
-    p {
-        font-size: calc(0.5em + 1vw);
-        margin: 5px 0;
-    }
-
-    section {
-        padding: 10px;
-        width: 100%;
-    }
-
-    table {
-        font-size: 12px;
-    }
-
-    table, th, td {
-        padding: 4px;
-    }
-
-    footer {
-        font-size: calc(0.98em + 1vw);
-        margin: 5px 0;
+    .footer-bottom .logo-section.media-partner img {
+        height: 15px;
+        margin: 1px;
     }
 }
